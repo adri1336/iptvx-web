@@ -1,0 +1,33 @@
+{
+    "DESCRIPTION": "Un reproductor de IPTV simple pero potente.",
+    "FEATURES_TITLE": "Características",
+    "FEATURES": [
+        "Guarda los últimos contenidos reproducidos.",
+        "Continua tus películas y series por donde las dejaste.",
+        "Organización automática de temporadas para las series.",
+        "Amplia compatibilidad de archivos (.avi, DivX, etc)."
+    ],
+    "PLATFORMS_TITLE": "Descargas",
+    "PLATFORMS": [
+        { "NAME": "Web", "ICON": "/images/web.png", "URL": "http://app.iptvx-app.com/" },
+        { "NAME": "Android", "ICON": "/images/android.png", "URL": "https://github.com/adri1336/rn-iptvx/releases" },
+        { "NAME": "LG WebOS", "ICON": "/images/lgwebos.png", "URL": "https://github.com/adri1336/lgwebos-iptvx/releases" }
+    ],
+    "OPEN_SOURCE": "Código abierto",
+    "OPEN_SOURCE_LINKS": [
+        { "NAME": "Main Project", "URL": "https://github.com/adri1336/iptvone" },
+        { "NAME": "FFmpeg real-time conversor", "URL": "https://github.com/adri1336/iptvx-api" },
+        { "NAME": "Android App", "URL": "https://github.com/adri1336/rn-iptvx" },
+        { "NAME": "LG App", "URL": "https://github.com/adri1336/lgwebos-iptvx" }
+    ],
+    "CONTACT_TITLE": "Contacto",
+    "CONTACT": [
+        { "NAME": "GitHub", "URL": "https://github.com/adri1336" },
+        { "NAME": "Email", "URL": "mailto:adri1pawn@gmail.com" },
+        { "NAME": "Donate", "URL": "https://paypal.me/SuperRoleplay" }
+    ],
+    "FOOTER": [
+        "Hecho con ❤️ por adri1.",
+        "No se incluyen canales ni ningún contenido en la aplicación. Los desarrolladores de aplicaciones no son responsables del contenido cargado en ella."
+    ]
+}

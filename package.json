@@ -5,12 +5,17 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 3045",
     "lint": "next lint"
   },
   "dependencies": {
+    "bootstrap": "^5.2.3",
+    "i18next": "^22.4.14",
     "next": "13.3.0",
+    "next-i18next": "^13.2.2",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-i18next": "^12.2.0",
+    "react-icons": "^4.8.0"
   }
 }
