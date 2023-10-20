@@ -1,16 +1,17 @@
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useTranslation } from 'next-i18next';
+import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from "next/router";
+import '@/utils/i18n';
 
 export default () => {
 	const router = useRouter();
-	const { t } = useTranslation('common');
-	const languages = router.locales;
+	const { t, i18n } = useTranslation();
+	const languages = Object.keys(i18n.services.resourceStore.data);
 
-	const setLanguage = (language) =>
-		router.push(router.pathname, router.pathname, { locale: language });
+	const setLanguage = (language) => {
+		i18n.changeLanguage(language);	
+	};
 
 	return <div className="page-container">
 		<div className="page">
@@ -105,11 +106,3 @@ export default () => {
 		</div>
 	</div>;
 };
-
-export async function getStaticProps({ locale }) {
-	return {
-		props: {
-			...(await serverSideTranslations(locale, ['common']))
-		}
-	};
-}

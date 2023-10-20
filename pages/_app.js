@@ -1,6 +1,5 @@
 import '@/styles/globals.css'
 import 'bootstrap/dist/css/bootstrap.css'
-import { appWithTranslation } from 'next-i18next';
 import Head from 'next/head';
 import { useEffect } from 'react';
 
@@ -20,4 +19,4 @@ const App = ({ Component, pageProps }) => {
 	</>;
 }
 
-export default appWithTranslation(App);
+export default App;
